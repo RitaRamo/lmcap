@@ -1,3 +1,3 @@
-# lmcap
+# LMCap
 
-Code soon to be realeased
+Code soon to be released
