@@ -8,7 +8,7 @@ Our model did not require any training, hence you only need to interact with it 
 
 To evaluate our model, we used the COCO Karpathy splits and the XM3600 dataset. 
 
-You can download the precomputed data from [here](), placing them in the corresponding folders:
+You can download the precomputed data from [here](https://huggingface.co/RitaParadaRamos/lmcap/tree/main), unzip and placing them in the corresponding folders:
 - Download `data`, i.e., the COCO and XM3600 annotations and splits from "en,es, zh, hi"
 - Download `caps_retrieved`, i.e., the retrieved captions for each dataset
 - Donwload `caps_support`, i.e., captions for the support examples for in context learning
@@ -29,10 +29,10 @@ Inside folder `experiments.json`, you have it there how you can run the experime
 
 You can play around with the languages (LanguageArray), number of k retrieved captions (KArray), the number of support examples (ContextArray), the split ("val" or "test"):
 
-LanguageArray=("es" "zh" "hi" "en")
-KArray=( "4" )
-ContextArray=("3" )
-SPLIT="val"
+- `LanguageArray=("es" "zh" "hi" "en")`
+- `KArray=( "4" )`
+- `ContextArray=("3" )`
+- `SPLIT="val"`
 
 Alternative, you can run:
 - ```python3 src/eval.py $args``` (to generate the corresponding captions).
@@ -44,7 +44,7 @@ In all of the above, you would need to fill the command-line options $args accor
 
 ### Paper
 
-If you find our code/data/models or ideas useful in your research, please consider citing the [paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Ramos_SmallCap_Lightweight_Image_Captioning_Prompted_With_Retrieval_Augmentation_CVPR_2023_paper.pdf):
+If you find our code/data/models or ideas useful in your research, please consider citing the [paper](https://aclanthology.org/2023.findings-acl.104.pdf):
 ```
 @inproceedings{ramos-etal-2023-lmcap,
     title = "{LMC}ap: Few-shot Multilingual Image Captioning by Retrieval Augmented Language Model Prompting",
