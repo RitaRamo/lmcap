@@ -64,7 +64,7 @@ def evaluate(args):
 
         logging.info("\n prefix {}".format(input_with_prefix))
         logging.info("\n caps {}".format(caps))
-        break
+
     end = time.time()
     logging.info("FINAL cuda memory {}".format(torch.cuda.max_memory_allocated() / 1e9))
     
